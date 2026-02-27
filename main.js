@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Configuration - Replace with your n8n Production Webhook URL
-    const N8N_WEBHOOK_URL = 'https://n8n.aiporvos.com/webhook/influencer-studio';
+    const N8N_WEBHOOK_URL = 'https://n8n.aiporvos.com/webhook-test/influencer-studio';
 
     // File Previews
     const dropZones = document.querySelectorAll('.drop-zone');
