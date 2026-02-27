@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Influencer Studio | Crea tu Influencer Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">AI Influencer <span>Studio</span></h1>
+                <p>Diseña, genera y escala tu presencia digital con el poder de la Inteligencia Artificial.</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero.png" alt="AI Studio">
+            </div>
+        </header>
+
+        <section class="form-section">
+            <div class="glass-card">
+                <form id="influencerForm">
+                    <div class="form-grid">
+                        <!-- File Uploads -->
+                        <div class="upload-group">
+                            <label>Imagen del Influencer</label>
+                            <div class="drop-zone" id="dropInfluencer">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span>Subir Foto del Personaje</span>
+                                <input type="file" name="Imagen_del_influencer" accept="image/*" required>
+                                <div class="preview"></div>
+                            </div>
+                        </div>
+
+                        <div class="upload-group">
+                            <label>Escenario</label>
+                            <div class="drop-zone" id="dropScenario">
+                                <i class="fas fa-mountain-sun"></i>
+                                <span>Subir Escenario</span>
+                                <input type="file" name="Escenario" accept="image/*" required>
+                                <div class="preview"></div>
+                            </div>
+                        </div>
+
+                        <div class="upload-group">
+                            <label>Imagen del Producto</label>
+                            <div class="drop-zone" id="dropProduct">
+                                <i class="fas fa-box-open"></i>
+                                <span>Subir Producto</span>
+                                <input type="file" name="Imagen_del_producto" accept="image/*" required>
+                                <div class="preview"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-grid">
+                        <div class="input-group">
+                            <label>Nº de Imágenes</label>
+                            <div class="number-control">
+                                <button type="button" class="minus">-</button>
+                                <input type="number" name="Numero de imagenes" value="1" min="1" max="10">
+                                <button type="button" class="plus">+</button>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Nº de Videos</label>
+                            <div class="number-control">
+                                <button type="button" class="minus">-</button>
+                                <input type="number" name="Numero de videos" value="1" min="0" max="5">
+                                <button type="button" class="plus">+</button>
+                            </div>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <label>Relación de Aspecto</label>
+                            <div class="radio-group">
+                                <label class="radio-btn">
+                                    <input type="radio" name="Relacion de aspecto" value="16:9" checked>
+                                    <span><i class="fas fa-desktop"></i> 16:9 (Horizontal)</span>
+                                </label>
+                                <label class="radio-btn">
+                                    <input type="radio" name="Relacion de aspecto" value="9:16">
+                                    <span><i class="fas fa-mobile-alt"></i> 9:16 (Vertical)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <label>Instrucciones de Dirección Creativa</label>
+                            <textarea name="Detallar instrucciones  " placeholder="Describe la acción, el tono y los detalles que quieres que la IA capture..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Generar Influencer</span>
+                            <span class="btn-loader"><i class="fas fa-spinner fa-spin"></i> Procesando...</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Success Modal / Component -->
+        <div id="successOverlay" class="overlay hidden">
+            <div class="success-card">
+                <i class="fas fa-check-circle shine"></i>
+                <h2>PROCESO INICIADO</h2>
+                <p>Tu influencer está siendo generado en el laboratorio. Recibirás los resultados en tu correo en unos minutos.</p>
+                <button onclick="closeSuccess()" class="close-btn">Entendido</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
