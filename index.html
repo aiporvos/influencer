@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="background-glow"></div>
-    
+
     <main class="container">
         <header class="hero">
             <div class="hero-content">
@@ -61,6 +63,12 @@
                     </div>
 
                     <div class="settings-grid">
+                        <div class="input-group full-width">
+                            <label>Tu Correo Electrónico</label>
+                            <input type="email" name="email" placeholder="ejemplo@correo.com" required
+                                style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 12px; color: #fff; font-size: 1rem;">
+                        </div>
+
                         <div class="input-group">
                             <label>Nº de Imágenes</label>
                             <div class="number-control">
@@ -95,7 +103,9 @@
 
                         <div class="input-group full-width">
                             <label>Instrucciones de Dirección Creativa</label>
-                            <textarea name="Detallar instrucciones  " placeholder="Describe la acción, el tono y los detalles que quieres que la IA capture..." required></textarea>
+                            <textarea name="Detallar instrucciones  "
+                                placeholder="Describe la acción, el tono y los detalles que quieres que la IA capture..."
+                                required></textarea>
                         </div>
                     </div>
 
@@ -114,7 +124,8 @@
             <div class="success-card">
                 <i class="fas fa-check-circle shine"></i>
                 <h2>PROCESO INICIADO</h2>
-                <p>Tu influencer está siendo generado en el laboratorio. Recibirás los resultados en tu correo en unos minutos.</p>
+                <p>Tu influencer está siendo generado en el laboratorio. Recibirás los resultados en tu correo en unos
+                    minutos.</p>
                 <button onclick="closeSuccess()" class="close-btn">Entendido</button>
             </div>
         </div>
@@ -122,4 +133,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
