@@ -1,6 +1,7 @@
 # 🤖 AI Influencer Studio
 
-![AI Studio](assets/hero.png)
+<img width="409" height="637" alt="image" src="https://github.com/user-attachments/assets/c7419563-3f90-49b0-a625-592759e39e7c" />
+
 
 **AI Influencer Studio** es una plataforma de vanguardia que permite a creadores y agencias generar contenido multimedia de influencers altamente realista utilizando Inteligencia Artificial Generativa. Combina una interfaz web elegante con un potente motor de automatización en n8n.
 
