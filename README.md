@@ -65,4 +65,4 @@
 Para detalles más técnicos sobre el flujo de n8n y la arquitectura de datos, consulta el archivo [DOCUMENTACION.md](./DOCUMENTACION.md).
 
 ---
-Desarrollado con ❤️ para la nueva era de contenido digital.
+Desarrollado por Claudio con ❤️ para la nueva era de contenido digital.
